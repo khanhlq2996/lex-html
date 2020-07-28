@@ -804,19 +804,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-sm-6 mb-5 mb-sm-0">
-                    <strong id="transaction-count">2,399,101</strong>
+                    <strong class="number-count" data="2399101">2,399,101</strong>
                     <span>Ứng viên</span>
                 </div>
                 <div class="col-md-3 col-sm-6 mb-5 mb-sm-0">
-                    <strong id="city-count">2,399,101</strong>
+                    <strong class="number-count" data="2399101">2,399,101</strong>
                     <span>Việc làm</span>
                 </div>
                 <div class="col-md-3 col-sm-6 mb-5 mb-sm-0">
-                    <strong id="customer-count">2,399,101</strong>
+                    <strong class="number-count" data="2399101">2,399,101</strong>
                     <span>Công ty</span>
                 </div>
                 <div class="col-md-3 col-sm-6">
-                    <strong id="transaction-count-1">2,399,101</strong>
+                    <strong class="number-count" data="2399101">2,399,101</strong>
                     <span>Lượt ứng tuyển</span>
                 </div>
             </div>
@@ -932,73 +932,37 @@
 
     <script>
 
-        function easeOutExpo(x) {
-            return x === 1 ? 1 : 1 - Math.pow(2, -10 * x);
-        }
-
-        function animateNumber(finalNumber, duration = 5000, startNumber = 0, callback) {
-            const startTime = performance.now()
-            function updateNumber(currentTime) {
-                const elapsedTime = currentTime - startTime
-                if (elapsedTime > duration) {
-                    callback(finalNumber)
-                } else {
-                    const timeRate = (1.0 * elapsedTime) / duration
-                    const numberRate = easeOutExpo(timeRate)
-                    const currentNumber = Math.round(numberRate * finalNumber)
-                    callback(currentNumber)
-                    requestAnimationFrame(updateNumber)
-                }
+function easeOutExpo(x) {
+                return x === 1 ? 1 : 1 - Math.pow(2, -10 * x);
             }
-            requestAnimationFrame(updateNumber)
-        }
 
-        document.addEventListener('DOMContentLoaded', function () {
-            animateNumber(4000000, 3000, 0, function (number) {
-                const formattedNumber = number.toLocaleString()
-                document.getElementById('transaction-count').innerText = formattedNumber
-            })
+            function animateNumber(finalNumber, duration = 5000, startNumber = 0, callback) {
+                const startTime = performance.now()
+                function updateNumber(currentTime) {
+                    const elapsedTime = currentTime - startTime
+                    if (elapsedTime > duration) {
+                        callback(finalNumber)
+                    } else {
+                        const timeRate = (1.0 * elapsedTime) / duration
+                        const numberRate = easeOutExpo(timeRate)
+                        const currentNumber = Math.round(numberRate * finalNumber)
+                        callback(currentNumber)
+                        requestAnimationFrame(updateNumber)
+                    }
+                }
+                requestAnimationFrame(updateNumber)
+            }
 
-            animateNumber(98, 3000, 0, function (number) {
-                const formattedNumber = number.toLocaleString()
-                document.getElementById('city-count').innerText = formattedNumber
-            })
+            $('.number-count').each(function(index){
+                var data = $(this).attr('data');
+                var id = "number-count" + index;
+                $(this).attr('id', id);
 
-            animateNumber(1500, 3000, 0, function (number) {
-                const formattedNumber = number.toLocaleString()
-                document.getElementById('customer-count').innerText = formattedNumber
-            })
-
-            animateNumber(2399101, 3000, 0, function (number) {
-                const formattedNumber = number.toLocaleString()
-                document.getElementById('transaction-count-1').innerText = formattedNumber
-            })
-
-
-            animateNumber(1, 3000, 0, function (number) {
-                const formattedNumber = number.toLocaleString()
-                document.getElementById('recruitment').innerText = formattedNumber
-            })
-
-            animateNumber(1, 20, 0, function (number) {
-                const formattedNumber = number.toLocaleString()
-                document.getElementById('country').innerText = formattedNumber
-            })
-
-            animateNumber(1, 60, 0, function (number) {
-                const formattedNumber = number.toLocaleString()
-                document.getElementById('career').innerText = formattedNumber
-            })
-
-            animateNumber(1, 3000, 0, function (number) {
-                const formattedNumber = number.toLocaleString()
-                document.getElementById('export-program').innerText = formattedNumber
-            })
-
-
-
-
-        })
+                animateNumber(data, 5000, 0, function (number) {
+                    const formattedNumber = number.toLocaleString();
+                    $("#" + id).html(formattedNumber);
+                });
+            });
 
     </script>
 </body>

@@ -574,13 +574,8 @@ html {
   object-fit: cover;
 }
 
-.info-numbers {
-  width: 100%;
-  display: flex;
-}
 .info-numbers .media {
   height: 100%;
-  background: #f5f5f5;
   border: 1px solid #e1e1e1;
   padding: 15px;
   align-items: center;
@@ -600,9 +595,6 @@ html {
 }
 .info-numbers span {
   font-size: 16px;
-}
-.info-numbers .row {
-  width: 100%;
 }
 
 /* sjdhsj */
