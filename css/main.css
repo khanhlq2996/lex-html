@@ -9,11 +9,13 @@
 .search-input {
   position: relative;
 }
+
 .search-input svg {
   position: absolute;
   left: 15px;
   top: 13px;
 }
+
 .search-input #search {
   padding-left: 35px;
 }
@@ -24,20 +26,24 @@
   box-shadow: 1px 2px 4px -5px #000;
   text-align: center;
 }
+
 .filter select,
 .filter .nav-link.dropdown-toggle {
   font-size: 16px;
   padding: 0px 8px;
 }
+
 .filter .nav-item.dropdown {
   line-height: 36px;
 }
+
 .filter .nav-link.dropdown-toggle.change-arrowhead:after {
   border-bottom: 0.3em solid;
   border-right: 0.3em solid transparent;
   border-left: 0.3em solid transparent;
   border-top: 0em solid;
 }
+
 @media (max-width: 991px) {
   .filter .navbar.navbar-nav {
     padding: 8px 0px;
@@ -46,17 +52,21 @@
 .filter .row.collapse {
   margin-bottom: 2px;
 }
+
 .filter .container {
   background-color: transparent;
   box-shadow: none;
 }
+
 .filter .container .form-group {
   margin-bottom: 6px;
   margin-top: 7px;
 }
+
 .filter .container .open-toggle1-1 {
   cursor: pointer;
 }
+
 .filter .container .open-filter1-1 {
   display: block;
   float: left;
@@ -69,6 +79,7 @@
   margin: 30px 0px;
   margin-bottom: 0px;
 }
+
 @media (max-width: 1200px) and (min-width: 782px) {
   .program-list .col-lg-3 {
     flex: 0 0 33.333333%;
@@ -84,31 +95,37 @@
 .program-list a {
   text-decoration: none;
 }
+
 .program-list .title-category {
   font-size: 15px;
   font-weight: bold;
   margin-bottom: 20px;
 }
+
 .program-list .left-side .custom-checkbox label {
   display: flex;
   align-items: center;
   flex-direction: row-reverse;
   justify-content: flex-end;
 }
+
 .program-list .left-side .custom-checkbox .checkmark {
   margin-left: 15px;
 }
+
 .program-list .left-side .custom-control-search {
   background-color: white;
   border: 1px solid #dfdede;
   padding: 15px;
 }
+
 .program-list .left-side .custom-control-search h3 {
   font-size: 15px;
   position: relative;
   font-weight: bold;
   padding-bottom: 15px;
 }
+
 .program-list .left-side .custom-control-search h3:after {
   font-size: 15px;
   position: absolute;
@@ -120,85 +137,106 @@
   top: 30px;
   background-color: #0170bced;
 }
+
 .program-list .left-side .custom-control-search .input-control-search {
   margin-top: 15px;
   position: relative;
 }
+
 .program-list .left-side .custom-control-search .input-control-search svg {
   position: absolute;
   right: 10px;
   top: 12px;
 }
+
 .program-list .right-side img {
   width: 100%;
   height: auto;
 }
+
 .program-list .right-side .single-blog-item {
   box-shadow: 0px 0px 12.5px 1.5px rgba(0, 0, 0, 0.15);
   border-radius: 7px;
   width: 100%;
   padding: 5px;
+  margin-top: 10px;
   margin-bottom: 30px;
   position: relative;
 }
+
 .program-list .right-side .blog-content {
   padding: 15px;
 }
+
 .program-list .right-side .blog-content i {
   margin-right: 10px;
   color: #0170bc;
 }
+
 .program-list .right-side .blog-content .developer-html {
   margin-bottom: 10px;
 }
+
 .program-list .right-side .blog-content .developer-html ul {
   display: flex;
 }
+
 .program-list .right-side .blog-content .developer-html ul li {
   margin-right: 10px;
   border: 1px solid #ddd;
   padding: 0px 5px;
 }
+
 .program-list .right-side .blog-content .developer-html ul li a {
   color: #808080;
 }
+
 .program-list .right-side .full-time ul {
   display: flex;
 }
+
 .program-list .right-side .full-time ul li {
   margin-right: 10px;
 }
+
 .program-list .right-side .full-time ul li:first-child {
   background-color: #fff4f0;
   padding: 0 10px;
 }
+
 .program-list .right-side .full-time ul li:first-child a {
   color: #ff4800;
 }
+
 .program-list .right-side .full-time ul li a {
   color: #939292;
 }
+
 .program-list .right-side .full-time ul li i {
   -webkit-text-fill-color: white;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #939292;
 }
+
 .program-list .right-side .blog-thumnail {
   padding: 15px;
   padding-bottom: 0px;
 }
+
 .program-list .right-side .blog-content h4 {
   font-size: 16px;
   font-weight: 500;
   margin-bottom: 10px;
   text-transform: uppercase;
 }
+
 .program-list .right-side .blog-content h4 a {
   color: #1e1d1d;
   text-transform: initial;
   font-weight: bold;
   font-family: "UTM Helve";
 }
+
 .program-list .right-side .blog-content p {
   color: #999;
   font-size: 14px;
@@ -207,9 +245,11 @@
   line-height: 1.3333;
   margin-bottom: 10px;
 }
+
 .program-list .right-side .salary p span {
   color: #ff7042;
 }
+
 .program-list .right-side .more-btn {
   background: #0170bc;
   border-radius: 2px;
@@ -235,6 +275,7 @@
   position: relative;
   padding-top: 56.67%;
 }
+
 .thumnail-16-9 img {
   display: block;
   height: 100%;
@@ -258,21 +299,26 @@
   background-color: #f7fbff;
   margin-bottom: 25px !important;
 }
+
 .layout-information-fields .information-fields p {
   font-size: 12px;
   color: #939393;
   text-transform: uppercase;
 }
+
 .layout-information-fields .list {
   padding: 10px 0px;
   border-bottom: 1px solid #ddd;
 }
+
 .layout-information-fields p {
   margin-bottom: 0px;
 }
+
 .layout-information-fields p span {
   color: black;
 }
+
 .layout-information-fields .list:nth-child(5) {
   padding: 10px 0px;
   border-bottom: unset;
@@ -282,6 +328,7 @@
   width: 100%;
   margin-top: 15px;
 }
+
 .description-benefits h3 {
   font-size: 18px;
   font-weight: 500;
@@ -296,6 +343,7 @@
   margin-top: 15px;
   margin-bottom: 10px;
 }
+
 .description-benefits h3:before {
   background: #0091ce none repeat scroll 0 0;
   border-radius: 12px;
@@ -310,6 +358,7 @@
 .contact-information {
   margin: 30px 0px;
 }
+
 .contact-information h3 {
   font-size: 18px;
   font-weight: 500;
@@ -324,6 +373,7 @@
   margin-top: 15px;
   margin-bottom: 10px;
 }
+
 .contact-information h3:before {
   background: #0091ce none repeat scroll 0 0;
   border-radius: 12px;
@@ -334,6 +384,7 @@
   top: 31px;
   width: 100px;
 }
+
 .contact-information .col-lg-2 p {
   font-weight: bold;
 }
@@ -342,14 +393,17 @@
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
 .company-information .row {
   align-items: center;
 }
+
 .company-information h3 {
   text-transform: uppercase;
   font-size: 16px !important;
   font-weight: bold;
 }
+
 .company-information p {
   margin-bottom: 0px;
 }
@@ -357,20 +411,24 @@
 .click-scroll {
   background: #ddd;
 }
+
 @media (max-width: 991px) {
   .click-scroll {
     overflow: hidden;
   }
+
   .click-scroll ul {
     flex-wrap: inherit;
     width: 100%;
   }
+
   .click-scroll ul li {
     text-align: left !important;
     border-bottom: 1px solid white;
     max-width: 100%;
     flex: 0 0 100%;
   }
+
   .click-scroll ul li a {
     padding-left: 5px;
   }
@@ -380,6 +438,7 @@
   display: flex;
   justify-content: center;
 }
+
 .click-scroll ul li,
 .click-scroll .row li {
   font-size: 14px;
@@ -390,6 +449,7 @@
   margin-right: 10px;
   text-align: center;
 }
+
 .click-scroll ul li a,
 .click-scroll .row li a {
   color: black;
@@ -411,8 +471,9 @@ html {
 .content.program-list.homepage {
   padding-bottom: 30px;
 }
+
 .content.program-list.homepage .flickity-page-dots {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 #breadcrumb .breadcrumb {
@@ -488,29 +549,36 @@ html {
   padding: 20px 0px;
   border-bottom: 1px solid #ddd;
 }
+
 .sidebar-right .list-program-company {
   padding: 10px 15px;
   border-bottom: 1px solid #ddd;
   background: white;
 }
+
 .sidebar-right .list-program-company p {
   margin-bottom: 2px;
 }
+
 .sidebar-right .list-program-company i {
   margin-right: 10px;
   color: #0170bc;
 }
+
 .sidebar-right .list-program-company .fa-clock-o {
   margin-right: 6px;
 }
+
 .sidebar-right .list-program-company .fa-money {
   margin-right: 4px;
 }
+
 .sidebar-right .list-program-company span {
   color: #999;
   font-size: 14px;
   font-weight: 300;
 }
+
 .sidebar-right .list-program-company .name-job {
   font-weight: 500;
   font-size: 14px;
@@ -518,6 +586,7 @@ html {
   color: #1790d4;
   overflow: hidden;
 }
+
 .sidebar-right .list-program-company .name-company {
   font-weight: 500;
   font-size: 14px;
@@ -525,12 +594,14 @@ html {
   overflow: hidden;
   height: 1.5rem;
 }
+
 .sidebar-right .list-program-company .price {
   float: left;
   width: 140px;
   color: #fc205c;
   font-size: 13px;
 }
+
 .sidebar-right .list-program-company .date {
   width: 100px;
   color: #555;
@@ -551,6 +622,7 @@ html {
   margin-bottom: 30px;
   justify-content: center;
 }
+
 .pagination li {
   box-shadow: 0px 0px 12.5px 1.5px rgba(0, 0, 0, 0.15);
 }
@@ -568,6 +640,7 @@ html {
   display: block;
   padding-top: 100%;
 }
+
 .thumnail-1-1 a img {
   position: absolute;
   top: 0;
@@ -581,9 +654,9 @@ html {
 }
 
 .info-numbers {
-  width: 100%;
   display: flex;
 }
+
 .info-numbers .media {
   height: 100%;
   background: #f5f5f5;
@@ -591,24 +664,30 @@ html {
   padding: 15px;
   align-items: center;
 }
+
 .info-numbers i {
   font-size: 30px;
   color: #0170bc;
 }
+
 .info-numbers .media-body {
   margin-left: 10px;
 }
+
 .info-numbers p {
   margin-bottom: 0px;
   font-size: 22px;
   color: #0170bc;
   font-weight: bold;
 }
+
 .info-numbers span {
   font-size: 16px;
 }
+
 .info-numbers .row {
   width: 100%;
+  max-width: unset;
 }
 
 .company-gallery img {
@@ -625,10 +704,17 @@ html {
   padding-bottom: 9px;
   font-weight: bold;
 }
+
+.new-list h2 a {
+  font-size: 14px;
+  color: #0091ce;
+}
+
 @media (max-width: 400px) {
   .new-list h2 {
     font-size: 14px;
   }
+
   .new-list h2:before {
     top: 27px !important;
   }
@@ -643,9 +729,11 @@ html {
   top: 31px;
   width: 100px;
 }
+
 .new-list h3 {
   line-height: 0.4;
 }
+
 .new-list h3 a {
   color: black;
   line-height: 0.6;
@@ -655,6 +743,7 @@ html {
   font-weight: bold;
   text-decoration: none;
 }
+
 .new-list .new-description p {
   height: 2.8rem;
   overflow: hidden;
@@ -665,6 +754,7 @@ html {
   margin-bottom: 0.5em;
   line-height: 1.4;
 }
+
 .featured-news ul li:before {
   content: "";
   height: 8px;
@@ -676,12 +766,14 @@ html {
   left: -15px;
   top: 10px;
 }
+
 .featured-news ul a {
   color: black;
   font-size: 14px;
   font-weight: bold;
   text-decoration: none;
 }
+
 .featured-news ul a:hover {
   color: #0091ce;
 }
@@ -689,28 +781,35 @@ html {
 .category-news .media:hover a {
   color: #0091ce;
 }
+
 .category-news .media-left {
   flex: 0 0 30%;
   max-width: 30%;
 }
+
 .category-news .media-body {
   flex: 0 0 70%;
   max-width: 70%;
   margin-left: 7px;
 }
+
 .category-news a:hover {
   color: #0091ce;
 }
+
 .category-news .date-view {
   display: flex;
 }
+
 .category-news .date-view i {
   color: #0091ce;
 }
+
 .category-news .date-view .date {
   flex: 0 0 50%;
   max-width: 50%;
 }
+
 .category-news .date-view .view {
   float: right;
   flex: 0 0 50%;
@@ -721,19 +820,24 @@ html {
   margin-bottom: 25px;
   display: flex;
 }
+
 .content-new .date-view i {
   color: #0091ce;
 }
+
 .content-new .date-view .view {
   margin-left: 30px;
 }
 
-.sidebar-new .sidebar-content {
-  width: unset !important;
+@media (max-width: 991px) {
+  .sidebar-new .sidebar-content {
+    width: unset !important;
+  }
 }
 .sidebar-new ul {
   background-color: white;
 }
+
 .sidebar-new ul li {
   position: relative;
   margin-bottom: 0.5em;
@@ -741,11 +845,13 @@ html {
   padding-bottom: 0.5em;
   border-bottom: 1px solid #ececec;
 }
+
 .sidebar-new ul li:last-child {
   border-bottom: 1px solid white;
   padding-bottom: 0;
   margin-bottom: 0;
 }
+
 .sidebar-new ul li:before {
   content: "";
   height: 5px;
@@ -757,6 +863,7 @@ html {
   left: 6px;
   top: 8px;
 }
+
 .sidebar-new ul a {
   color: black;
   font-size: 14px;
@@ -764,16 +871,17 @@ html {
   text-decoration: none;
   padding-left: 20px;
 }
+
 .sidebar-new ul a:hover {
   color: #0091ce;
 }
+
 @media (max-width: 991px) {
   .sidebar-new .sidebar-right, .sidebar-new .sidebar-inner, .sidebar-new .sidebar-content {
     position: unset !important;
     width: 100% !important;
   }
 }
-
 .related-cat li:before {
   border-left: 2px solid #0091ce !important;
   border: 3px solid #0091ce !important;
@@ -782,6 +890,7 @@ html {
   height: 5px !important;
   width: 5px !important;
 }
+
 .related-cat li a {
   margin-left: 2rem;
 }
