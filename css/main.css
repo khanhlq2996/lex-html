@@ -894,3 +894,11 @@ html {
 .related-cat li a {
   margin-left: 2rem;
 }
+
+.pagination.category-news {
+  margin-bottom: 20px;
+}
+
+.breadcrumb-item a {
+  color: #0170bc;
+}
